@@ -12,19 +12,13 @@ class MyApp extends StatelessWidget {
     final NotesBloc bloc = NotesBloc(repository: repository);
 
     return MaterialApp(
+      key: const Key('material_app'),
       title: 'Notas Xiaomi',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Color(0xFFF4F4F4),
-        appBarTheme: AppBarTheme(
-          elevation: 0,
-          backgroundColor: Colors.transparent,
-          iconTheme: IconThemeData(
-            color: Colors.black,
-          ),
-        ),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: NotesPage(bloc: bloc), // Aquí se pasa el bloc creado al constructor de NotesPage
+      home: NotesPage(bloc: bloc),
     );
   }
 }
