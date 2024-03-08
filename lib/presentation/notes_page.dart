@@ -40,13 +40,14 @@ class _NotesPageState extends State<NotesPage> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
+        onPressed: () async {
+          await Navigator.push(
             context,
             MaterialPageRoute(
               builder: (context) => AddNotePage(bloc: widget.bloc),
             ),
           );
+          setState(() {}); // Refresh the UI after adding a new note
         },
         child: Icon(Icons.add),
       ),

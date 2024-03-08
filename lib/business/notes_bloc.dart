@@ -1,5 +1,3 @@
-// business/notes_bloc.dart
-
 import 'dart:async';
 import 'package:flutter_notas_3capas_app/data/note.dart';
 import 'package:flutter_notas_3capas_app/data/notes_repository.dart';
@@ -14,8 +12,9 @@ class NotesBloc {
     _loadNotes();
   }
 
-  void _loadNotes() {
-    _notesStreamController.add(_repository.getAllNotes());
+  void _loadNotes() async {
+    final notes = await _repository.getAllNotes();
+    _notesStreamController.add(notes);
   }
 
   void addNote(Note note) {

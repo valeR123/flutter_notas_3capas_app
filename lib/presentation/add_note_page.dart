@@ -1,5 +1,3 @@
-// presentation/add_note_page.dart
-
 import 'package:flutter/material.dart';
 import 'package:flutter_notas_3capas_app/business/notes_bloc.dart';
 import 'package:flutter_notas_3capas_app/data/note.dart';
@@ -48,7 +46,7 @@ class AddNotePage extends StatelessWidget {
                   Navigator.pop(context);
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('Por favor, complete todos los campos.')),
+                    SnackBar(content: Text('Please fill out all fields.')),
                   );
                 }
               },

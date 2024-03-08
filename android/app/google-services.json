@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1085873789627",
+    "project_id": "flutter-notas-3capas-app",
+    "storage_bucket": "flutter-notas-3capas-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085873789627:android:dc34272f250117b98f279e",
+        "android_client_info": {
+          "package_name": "com.example.flutter_notas_3capas_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA69jNqxyFT0eW2DE30118QSX2tDo9_ovU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
